@@ -34,6 +34,7 @@ Training is performed on GPU with CUDA; the full dataset is loaded into host mem
 The final model (**HypotensionModelV2**) uses a 2-layer 1D-CNN, bidirectional LSTM, and a 2-layer fully connected head:
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 graph LR
     A["Input: Vital Features<br/>MAP/HR/SBP/DBP stats"] --> B["2-Layer 1D-CNN<br/>+ BatchNorm"]
     B --> C["BiLSTM<br/>(Temporal Context)"]
